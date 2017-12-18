@@ -1,0 +1,13 @@
+{
+  "namespace": "com.kuark.jfzk.demo.protoc",
+  "type": "record",
+  "name": "HelloResp",
+  "doc": "我也得寒暄几句不是",
+  "fields": [
+    {
+      "name": "me",
+      "type": "string",
+      "doc": "子账户列表"
+    }
+  ]
+}

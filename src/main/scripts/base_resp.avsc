@@ -1,0 +1,27 @@
+{
+  "namespace": "com.kuark.jfzk.demo.protoc",
+  "type": "record",
+  "name": "BaseResponse",
+  "doc": "总响应体",
+  "fields": [
+    {
+      "name": "resp_code",
+      "type": "string"
+    },
+    {
+      "name": "resp_info",
+      "type": "string",
+      "default": "null"
+    },
+    {
+      "name": "trade_body",
+      "type": "bytes",
+      "default": "null"
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "default": "null"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "namespace": "com.kuark.jfzk.demo.protoc",
+  "type": "record",
+  "name": "BaseRequest",
+  "doc": "总请求体",
+  "fields": [
+    {
+      "name": "sys_id",
+      "type": "string"
+    },
+    {
+      "name": "trade_code",
+      "type": "string"
+    },
+    {
+      "name": "trade_body",
+      "type": "bytes",
+      "default": "null"
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "default": "null"
+    }
+  ]
+}

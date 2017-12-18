@@ -1,0 +1,12 @@
+{
+  "namespace": "com.kuark.jfzk.demo.protoc",
+  "type": "record",
+  "name": "HelloReq",
+  "doc": "打个招呼啊",
+  "fields": [
+    {
+      "name": "who",
+      "type": "string"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration>
+    <appender name="rootFileApp" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="logs/hf.log"/>
+        <param name="Append" value="true"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %.25c [%t] %-5p %x - %m%n"/>
+        </layout>
+    </appender>
+    <appender name="rootConsole" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %c [%t] %-5p %x - %m%n"/>
+        </layout>
+    </appender>
+    <root>
+        <priority value="debug"/>
+        <appender-ref ref="rootFileApp"/>
+        <appender-ref ref="rootConsole"/>
+    </root>
+
+</log4j:configuration>
